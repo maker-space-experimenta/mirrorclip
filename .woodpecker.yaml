@@ -20,4 +20,4 @@ steps:
       event: push
     commands:
       # Tells K8s to re-download the latest image we just pushed
-      - kubectl rollout restart deployment/mirrorclip -n default
+      - kubectl rollout restart deployment/k8s -n default

@@ -11,7 +11,6 @@ steps:
         - latest
         - "sha-${CI_COMMIT_SHA:0:8}"
       insecure: true
-      cache_from: registry.default.svc.cluster.local:5000/mirrorclip:latest
 
   deploy:
     image: bitnami/kubectl
